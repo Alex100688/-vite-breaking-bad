@@ -1,42 +1,32 @@
 <script>
-import AppCharachters from './AppCharachters.vue';
-    export default {
-    name: "AppMain",
-    components: {
-        AppCharachters
+import SectionSelect from './SectionSelect.vue';
+import SectionCharacters from './SectionCharacters.vue';
+export default
+    {
+        name: "AppMain",
+        components: {
+           SectionSelect,
+            SectionCharacters,
     },
        
     }
 </script>
 <template>
-    <div class="container mt-auto ">
-        <select class="form-select-sm my-3" >
-        <option selected>Select Category</option>
-        <option value="1">Name</option>
-        <option value="2">Occupation</option>
-        <option value="3">Status</option>
-      </select>
-    </div>
-    <div class="container container-main mt-auto">
-        <div class="col-12 py-2 color-found">
-            <h6>Found 62 charachters</h6>
+    <div class="container bg-white my-3">
+        <div class="row">
+            <div class="col-12 py-3">
+                <h4 class="ps-3">Found 62 characters</h4>
+            </div>
+            <SectionCharacters class="my-3"/>
         </div>
+       
     </div>
-    <AppCharachters/>
 </template>
 
 
 <style lang="scss" scoped>
-    select{
-        border: none;
-    }
-    .container-main{
-        background-color: white;
-    }
-    .color-found{
+   h4{
         background-color: #212529;
-        h6{
-            color: white;
-        }
+        color: #ffff;
     }
 </style>
