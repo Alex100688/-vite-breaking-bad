@@ -21,4 +21,7 @@ export default {
 
 <style lang="scss">
 @import "./style/global.scss";
+body{
+  background-color: #2e3a46;
+}
 </style>
