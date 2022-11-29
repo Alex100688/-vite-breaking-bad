@@ -1,6 +1,9 @@
 <script>
     export default {
-        name:"CardCharacters"
+        name: "CardCharacters",
+        props: {
+            info:Object,
+        },
     }
 </script>
 <template>

@@ -1,4 +1,5 @@
 <script>
+import axios from "axios";
 import CardCharcaters from './CardCharcaters.vue';
 export default
     {
@@ -8,10 +9,16 @@ export default
         },
         data() {
             return {
-                Characters:[],
+                characters: []
             }
-            
-        }
+        },
+       created () {
+           axios.get("https://www.breakingbadapi.com/api/characters")
+               .then((figures) => {
+                   this.characters = figures.data;
+
+               });
+       },
     }
 </script>
 <template>
