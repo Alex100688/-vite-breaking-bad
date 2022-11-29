@@ -23,12 +23,10 @@ export default
 </script>
 <template>
     <section class="container">
-        <div class="row justify-content-center ">
-            <CardCharcaters class="col-2"/>
-            <CardCharcaters class="col-2"/>
-            <CardCharcaters class="col-2"/>
-            <CardCharcaters class="col-2"/>
-            <CardCharcaters class="col-2"/>
+        <div class="row g-3 justify-content-center ">
+            <CardCharcaters v-for="character in characters" class="col-2" :info="character"/>
+            
+            
 
 
 
