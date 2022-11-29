@@ -12,7 +12,7 @@ export default
     }
 </script>
 <template>
-    <div class="container bg-white my-3">
+    <div class="container bg-white px-4 my-3">
         <div class="row">
             <div class="col-12 py-3">
                 <h4 class="ps-3">Found 62 characters</h4>

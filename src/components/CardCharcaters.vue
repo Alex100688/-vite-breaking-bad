@@ -8,20 +8,30 @@
 </script>
 <template>
     <div class="text-center">
-        <img  :src="info.img" :alt="info.name">
-        <h6>{{info.name}}</h6>
-        <div>{{info.category}}</div>
-        <div>{{info.status}}</div>
-        
-        
+        <div class="color-figures py-3">
+        <img class="mb-3"  :src="info.img" :alt="info.name">
+        <h6 class="mb-4 fw-bold">{{info.name}}</h6>
+        <div class="color-info">{{info.category}}</div>
+        <small class="color-info">{{info.status}}</small>          
+        </div>
     </div>
 </template>
 
 
 <style lang="scss" scoped>
+   .color-figures{
+    background-color: #2e3a46;
+   }
+   
     img{
         width: 9.375rem;
         height: 12.5rem;
         object-fit: cover;
+    }
+    h6{
+        color: #ffff;
+    }
+    .color-info{
+        color: #726f6f;
     }
 </style>

@@ -23,13 +23,8 @@ export default
 </script>
 <template>
     <section class="container">
-        <div class="row g-3 justify-content-center ">
-            <CardCharcaters v-for="character in characters" class="col-2" :info="character"/>
-            
-            
-
-
-
+        <div class="row g-4 justify-content-center ">
+            <CardCharcaters v-for="character in characters" class="col-3" :info="character"/> 
         </div>
     </section>
         
@@ -37,5 +32,6 @@ export default
 
 
 <style lang="scss" scoped>
+    
    
 </style>
